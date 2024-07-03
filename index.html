@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Agenda de Contatos</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>Agenda de Contatos</h2>
+        </header>
+        <table id="tabela-contatos">
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+            </tr>
+        </table>
+
+        <h2>Adicionar Contato</h2>
+        <form id="form-contato">
+            <label for="nome">NOME</label><br><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+            <label for="telefone">TELEFONE</label><br><br>
+            <input type="text" id="telefone" name="telefone" required><br><br>
+            <button type="button" onclick="adicionarContato()">Cadastrar</button>
+            <button type="button" onclick="limparTabela()">Limpar Tabela</button>
+        </form>
+        
+        <script src="./script.js"></script>
+    </div>
+</body>
+
+</html>
